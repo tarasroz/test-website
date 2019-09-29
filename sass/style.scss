@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    // background-color: grey;  
+    display: flex;
+    flex-direction: column;  
+}
+
+@import './header.scss',
+        './home.scss', 
+        './services.scss',
+        './team.scss',
+        './contacts.scss',
+        './footer.scss';
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
+@font-face {    
+    font-family: "Gilroy-ExtraBold";
+    src: url("../assets/fonts/Gilroy/Gilroy-ExtraBold.otf");    
+};
+@font-face {    
+    font-family: 'Gilroy-Medium';
+    src: url("../assets/fonts/Gilroy/Gilroy-Medium.ttf");    
+};
+@font-face {    
+    font-family: "Gilroy-Bold";
+    src: url("../assets/fonts/Gilroy/Gilroy-Bold.ttf");    
+};
