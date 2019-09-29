@@ -1,0 +1,163 @@
+#contacts {
+  position: absolute;
+  top: 449%;
+  width: 100%;
+  height: auto;
+//   border: 1px solid;
+  padding: 0vh 39vh;
+  display: flex;
+  flex-direction: row;
+  z-index: 96;
+
+  .contacts-info {
+    h2 {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 52px;
+      line-height: 60px;
+      color: #00a031;
+      width: 18vw;
+      height: 6vw;
+      margin-right: 1vw;
+    }
+
+    p {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.2px;
+      color: #6c6c6c;
+      margin-top: 1vh;
+      margin-right: 2vw;
+    }
+
+    .cities {
+      margin-top: 4vh;
+      margin-left: 1vh;
+
+      .city {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        width: 14vw;
+        height: 7vw;
+        &:hover {
+          background: #ffffff;
+          box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.0758039);
+        }
+
+        img {
+          width: 25px;
+          height: 25px;
+          margin-right: 10px;
+        }
+        .cities-details {
+          width: 100%;
+          height: auto;
+          margin-left: 1vh;
+
+          button {
+            width: 100%;
+            cursor: pointer;
+            background: none;
+            border: none;
+            display: inline-flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            outline: none;
+
+            h4 {
+              font-family: "Poppins";
+              font-style: normal;
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 28px;
+              letter-spacing: 0.2px;
+              color: #00a031;
+              float: left;
+            }
+            p {
+              margin-left: -20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .contacts-map {
+    display: flex;
+    flex-direction: row;
+
+    .map-info {
+      z-index: 97;
+      width: 17vw;
+      height: 26vw;
+      margin-top: 13%;
+      margin-left: -22%;
+      background: #ffffff;
+      box-shadow: 0px 40px 40px rgba(0, 0, 0, 0.0758039);
+      padding-left: 3vw;
+
+      h3 {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 38px;
+        line-height: 51px;
+        letter-spacing: 0.4px;
+        color: #1c201e;
+        margin-top: 3vh;
+      }
+
+      p {
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        color: #6c6c6c;
+      }
+
+      .map-details {
+        h4 {
+          font-family: Poppins;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 28px;
+          letter-spacing: 0.2px;
+          color: #1c201e;
+          margin-left: 1vh;
+        }
+
+        p {
+          font-family: Poppins;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 24px;
+          letter-spacing: 0.2px;
+          color: #999999;
+        }
+        .details-head {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin-top: 3vh;
+
+          img {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@import "./map-google.scss";
