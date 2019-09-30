@@ -1,8 +1,0 @@
-header.logo
-    a(href="https://upqode.com")
-        img(src="./assets/header/Logo.svg" alt="upqode")
-    .links
-        nav            
-            - var hrefs = ["home", "services", "team", "contacts"];
-                each hrf in hrefs
-                    a(href=`${"#"}${hrf}`, target="_self")= hrf.charAt(0).toUpperCase() + hrf.slice(1)        
