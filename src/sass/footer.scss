@@ -1,0 +1,27 @@
+#footer {
+  position: absolute;
+  top: 552%;
+  background: #222222;
+  width: 100%;
+  height: 18vw;
+  z-index: 97;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  img {
+    margin-bottom: 6vw;
+  }
+
+  p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #777777;
+  }
+}

@@ -1,0 +1,168 @@
+#team {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+  top: 345vh;
+  width: auto;
+  height: auto;
+  margin: 0% 15%;
+
+  .team-foto {
+    // position: relative;
+    width: 200px;
+    height: 500px;
+    margin-right: 28%;
+    margin-top: 20vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    :nth-child(2) {
+      z-index: -4;
+      width: 200px;
+      height: 450px;
+      margin-left: -70%;
+    }
+    
+    :last-child {
+      z-index: -5;
+      height: 350px;
+      margin-left: -90%;
+    }
+  }
+
+  .team-info {
+    width: 40%;
+    height: 300px;
+    margin: 140px 85px;
+
+    h2 {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 38px;
+      line-height: 51px;
+      letter-spacing: 0.4px;
+      color: #00a031;
+      margin: 4px 0px;
+    }
+
+    h4,
+    a {
+      font-family: "Gilroy-Medium";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 16px;
+      letter-spacing: 3px;
+      color: #6c6c6c;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+
+    p {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.2px;
+      color: #6c6c6c;
+      margin-top: 40px;
+    }
+
+    nav {
+      margin-top: 52px;
+    }
+
+    .team-pagin {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 67px;
+      width: 700px;
+
+      .next,
+      .prev {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      .prev:nth-child(even) {
+        display: flex;
+        flex-direction: row-reverse;
+        float: right;
+        margin-right: 6vw;
+      }
+
+      .prev-info,
+      .next-info {
+        display: flex;
+        flex-direction: column;
+        margin: 25px;
+
+        h4 {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 28px;
+          letter-spacing: 0.2px;
+          color: #00a031;
+        }
+      }
+
+      .prev-arrow {
+        width: 120px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+
+        font-family: "Gilroy";
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #00a031;
+        mix-blend-mode: normal;
+        opacity: 0.6;
+        &:hover {
+          cursor: pointer;
+        }
+
+        h4 {
+          float: right;
+        }
+      }
+
+      .next-arrow {
+        width: 120px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        font-family: "Gilroy";
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #00a031;
+        mix-blend-mode: normal;
+        opacity: 0.6;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

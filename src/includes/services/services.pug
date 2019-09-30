@@ -1,0 +1,65 @@
+
+//- mixin something(key)
+//-   - 
+//-     -let dataJson = JSON.stringify(this.document.body.innerText);
+//-   -var content = dataJson[key]
+
+//- mixin something(key)
+//-   - 
+//-     -let path = require('path');
+//-     -let fs = require('fs');
+//-     -let dataJson = JSON.stringify(fs.readFileSync(path.normalize(appRootPath.toString()+"../../json/services.json")));
+//-     //- -let dataJson = readJson("../../json/services.json");
+//-   h1= dataJson[key]
+
+//- .picture-back
+//-     img(src="./assets/Group 18.png" alt="circles")
+//-     img(src="./assets/Bitmap Copy.png" alt="phone") 
+
+
+//- script 
+//-     include services.js 
+//- |
+//- |
+
+//- - mixin something(key)
+//-     -
+//-         -var requestURL= 'services.json';
+//-         -var request= new XMLHttpRequest();
+//-         -console.log(request);
+
+//- include:coffee-script services.json
+
+
+//- script
+//-     :coffee-script 
+
+//- mixin something(key)
+//-   - 
+//-     -var pug= require('pug');
+//-     -var html= pug.renderFile('services.json', options);
+    -var content= 'services.json';
+
+include ../../json/services-json.pug
+    #services
+        .trace
+        .point
+        each tag in content   
+            .items  
+                .picture-back
+                    img(src="./assets/services/Group_18.png" alt="circles")
+                    img(src="./assets/services/Bitmap_Copy.png" alt="phone")    
+                section(class= tag.class)
+                    h1= tag.h1
+                    h4= tag.h4 
+                    .check               
+                        img(src="./assets/services/check.png" alt="check")
+                        p= tag.li_1
+                    .check  
+                        img(src="./assets/services/check.png" alt="check")
+                        p= tag.li_2
+                    button
+                        //- p= tag.p
+                        //- -var src="./assets/services/if_260_462624.svg"
+                        //-     img(src= src)
+            

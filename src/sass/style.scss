@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;  
+}
+
+@import './header.scss',
+        './home.scss', 
+        './services.scss',
+        './team.scss',
+        './contacts.scss',
+        './footer.scss';
+
+@font-face {    
+    font-family: "Gilroy-ExtraBold";
+    src: url("../assets/fonts/Gilroy/Gilroy-ExtraBold.otf");    
+};
+@font-face {    
+    font-family: 'Gilroy-Medium';
+    src: url("../assets/fonts/Gilroy/Gilroy-Medium.ttf");    
+};
+@font-face {    
+    font-family: "Gilroy-Bold";
+    src: url("../assets/fonts/Gilroy/Gilroy-Bold.ttf");    
+};
